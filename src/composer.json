@@ -25,7 +25,10 @@
         "symfony/serializer": "^7.2",
         "symfony/validator": "^7.2",
         "symfony/yaml": "^7.2",
-        "symfony/framework-bundle": "^7.2"
+        "symfony/framework-bundle": "^7.2",
+        "slim/slim": "4.*",
+        "nyholm/psr7": "^1.8",
+        "nyholm/psr7-server": "^1.1"
     },
     "config": {
         "bin-dir": "vendor/bin"

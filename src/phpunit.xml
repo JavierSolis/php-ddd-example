@@ -26,6 +26,9 @@
         <testsuite name="Infrastructure Test Suite">
             <directory>./tests/Infrastructure</directory>
         </testsuite>
+        <testsuite name="Api Test Suite">
+            <directory>./tests/Api</directory>
+        </testsuite>
     </testsuites>
     <source>
         <include>

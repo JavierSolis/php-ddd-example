@@ -23,7 +23,7 @@ class RegisterUser
         $this->eventDispatcher = $eventDispatcher;
     }
 
-    public function execute(string $name, string $email, string $password): void
+    public function execute(string $name, string $email, string $password): User
     {
         if ($this->userRepository->findByEmail(new Email($email))) {
             throw new UserAlreadyExistsException("User with email: " . $email . " already exists.");
@@ -39,5 +39,7 @@ class RegisterUser
         $this->userRepository->save($user);
 
         $this->eventDispatcher->dispatch(new UserRegistered($user), UserRegistered::NAME);
+
+        return $user;
     }
 }

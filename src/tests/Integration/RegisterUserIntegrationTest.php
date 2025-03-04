@@ -24,7 +24,6 @@ class RegisterUserIntegrationTest extends TestCase
         $this->createSqliteSchema();
         $this->cleanDatabase();
 
-    
         $userRepository = new DoctrineUserRepository($this->entityManager);
         $this->registerUser = new RegisterUser($userRepository, $eventDispatcher);
     }

@@ -10,6 +10,6 @@ class SendWelcomeEmail
     {
         $user = $event->getUser();
         // Lógica para enviar un email de bienvenida al usuario
-        echo "Email de bienvenida enviado a: " . $user->getEmail()->getEmail() . "\n";
+        //echo "Email de bienvenida enviado a: " . $user->getEmail()->getEmail() . "\n";
     }
 }
