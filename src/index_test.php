@@ -32,7 +32,6 @@ $schemaTool = new SchemaTool($entityManager);
 $metadata = $entityManager->getMetadataFactory()->getAllMetadata();
 try {
     $schemaTool->createSchema($metadata);
-    echo "SQLite schema created.\n"; // Agregar esta línea
 } catch (\Exception $e) {
     echo "Error creating SQLite schema: " . $e->getMessage() . "\n";
 }

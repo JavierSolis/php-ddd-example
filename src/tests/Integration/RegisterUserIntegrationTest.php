@@ -8,6 +8,13 @@ use PHPUnit\Framework\TestCase;
 
 use Doctrine\ORM\Tools\SchemaTool;
 
+use App\Domain\Entity\User;
+use App\Domain\ValueObject\Email;
+use App\Domain\ValueObject\Name;
+use App\Domain\ValueObject\Password;
+use App\Domain\ValueObject\UserId;
+use Doctrine\ORM\EntityManagerInterface;
+
 
 class RegisterUserIntegrationTest extends TestCase
 {
@@ -37,26 +44,20 @@ class RegisterUserIntegrationTest extends TestCase
         $metadata = $this->entityManager->getMetadataFactory()->getAllMetadata();
         try {
             $schemaTool->createSchema($metadata);
-            echo "SQLite schema created.\n"; // Agregar esta línea
         } catch (\Exception $e) {
             echo "Error creating SQLite schema: " . $e->getMessage() . "\n";
         }
 
-        echo "SQLite schema created.\n"; // Agregar esta línea
     }
 
     private function cleanDatabase(): void
     {
-        echo "SQLite cleanDatabase.\n"; // Agregar esta línea
-
         $connection = $this->entityManager->getConnection();
         $connection->executeStatement('DELETE FROM users');
     }
 
     public function testExecute(): void
     {
-        echo "SQLite testExecute.\n"; // Agregar esta línea
-
         //try {
             $email = 'john.doe.' . uniqid() . '.integration@example.com';
             $this->registerUser->execute('John Doe', $email, 'Password123!');
@@ -65,4 +66,5 @@ class RegisterUserIntegrationTest extends TestCase
         //    $this->fail("Error: " . $e->getMessage());
         //}
     }
+
 }
