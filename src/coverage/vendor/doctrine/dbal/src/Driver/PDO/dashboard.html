@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/html/vendor/doctrine/dbal/src/Driver/PDO</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../../../../_css/bootstrap.min.css?v=11.0.9" rel="stylesheet" type="text/css">
+  <link href="../../../../../../_css/nv.d3.min.css?v=11.0.9" rel="stylesheet" type="text/css">
+  <link href="../../../../../../_css/style.css?v=11.0.9" rel="stylesheet" type="text/css">
+  <link href="../../../../../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../../../../../index.html">/var/www/html</a></li>
+         <li class="breadcrumb-item"><a href="../../../../../index.html">vendor</a></li>
+         <li class="breadcrumb-item"><a href="../../../../index.html">doctrine</a></li>
+         <li class="breadcrumb-item"><a href="../../../index.html">dbal</a></li>
+         <li class="breadcrumb-item"><a href="../../index.html">src</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Driver</a></li>
+         <li class="breadcrumb-item"><a href="index.html">PDO</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Exception.php.html#11">Doctrine\DBAL\Driver\PDO\Exception</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/InvalidConfiguration.php.html#12">Doctrine\DBAL\Driver\PDO\Exception\InvalidConfiguration</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MySQL/Driver.php.html#18">Doctrine\DBAL\Driver\PDO\MySQL\Driver</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OCI/Driver.php.html#18">Doctrine\DBAL\Driver\PDO\OCI\Driver</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PgSQL/Driver.php.html#18">Doctrine\DBAL\Driver\PDO\PgSQL\Driver</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Connection.php.html#11">Doctrine\DBAL\Driver\PDO\SQLSrv\Connection</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Driver.php.html#21">Doctrine\DBAL\Driver\PDO\SQLSrv\Driver</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Statement.php.html#12">Doctrine\DBAL\Driver\PDO\SQLSrv\Statement</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#14">Doctrine\DBAL\Driver\PDO\Result</a></td><td class="text-right">17%</td></tr>
+       <tr><td><a href="Connection.php.html#16">Doctrine\DBAL\Driver\PDO\Connection</a></td><td class="text-right">22%</td></tr>
+       <tr><td><a href="Statement.php.html#14">Doctrine\DBAL\Driver\PDO\Statement</a></td><td class="text-right">59%</td></tr>
+       <tr><td><a href="PDOConnect.php.html#12">Doctrine\DBAL\Driver\PDO\PDOConnect</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="SQLite/Driver.php.html#18">Doctrine\DBAL\Driver\PDO\SQLite\Driver</a></td><td class="text-right">72%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="PgSQL/Driver.php.html#18">Doctrine\DBAL\Driver\PDO\PgSQL\Driver</a></td><td class="text-right">506</td></tr>
+       <tr><td><a href="SQLSrv/Driver.php.html#21">Doctrine\DBAL\Driver\PDO\SQLSrv\Driver</a></td><td class="text-right">342</td></tr>
+       <tr><td><a href="Connection.php.html#16">Doctrine\DBAL\Driver\PDO\Connection</a></td><td class="text-right">292</td></tr>
+       <tr><td><a href="Result.php.html#14">Doctrine\DBAL\Driver\PDO\Result</a></td><td class="text-right">241</td></tr>
+       <tr><td><a href="MySQL/Driver.php.html#18">Doctrine\DBAL\Driver\PDO\MySQL\Driver</a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="OCI/Driver.php.html#18">Doctrine\DBAL\Driver\PDO\OCI\Driver</a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="SQLSrv/Statement.php.html#12">Doctrine\DBAL\Driver\PDO\SQLSrv\Statement</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Statement.php.html#14">Doctrine\DBAL\Driver\PDO\Statement</a></td><td class="text-right">24</td></tr>
+       <tr><td><a href="SQLite/Driver.php.html#18">Doctrine\DBAL\Driver\PDO\SQLite\Driver</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Exception.php.html#11">Doctrine\DBAL\Driver\PDO\Exception</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="PDOConnect.php.html#12">Doctrine\DBAL\Driver\PDO\PDOConnect</a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Connection.php.html#37"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::getServerVersion">getServerVersion</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Connection.php.html#54"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::query">query</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Connection.php.html#66"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::quote">quote</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Connection.php.html#71"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::lastInsertId">lastInsertId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Connection.php.html#120"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::rollBack">rollBack</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Connection.php.html#129"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::getNativeConnection">getNativeConnection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception.php.html#13"><abbr title="Doctrine\DBAL\Driver\PDO\Exception::new">new</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Exception/InvalidConfiguration.php.html#14"><abbr title="Doctrine\DBAL\Driver\PDO\Exception\InvalidConfiguration::notAStringOrNull">notAStringOrNull</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MySQL/Driver.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\MySQL\Driver::connect">connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="MySQL/Driver.php.html#63"><abbr title="Doctrine\DBAL\Driver\PDO\MySQL\Driver::constructPdoDsn">constructPdoDsn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OCI/Driver.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\OCI\Driver::connect">connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="OCI/Driver.php.html#63"><abbr title="Doctrine\DBAL\Driver\PDO\OCI\Driver::constructPdoDsn">constructPdoDsn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PgSQL/Driver.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\PgSQL\Driver::connect">connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="PgSQL/Driver.php.html#79"><abbr title="Doctrine\DBAL\Driver\PDO\PgSQL\Driver::constructPdoDsn">constructPdoDsn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#21"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetchNumeric">fetchNumeric</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#31"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetchOne">fetchOne</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#39"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetchAllNumeric">fetchAllNumeric</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#47"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetchAllAssociative">fetchAllAssociative</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#55"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetchFirstColumn">fetchFirstColumn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#69"><abbr title="Doctrine\DBAL\Driver\PDO\Result::columnCount">columnCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#78"><abbr title="Doctrine\DBAL\Driver\PDO\Result::getColumnName">getColumnName</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Result.php.html#121"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetchAll">fetchAll</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Connection.php.html#13"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Connection::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Connection.php.html#18"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Connection::prepare">prepare</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Connection.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Connection::getNativeConnection">getNativeConnection</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Driver.php.html#28"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Driver::connect">connect</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Driver.php.html#79"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Driver::constructDsn">constructDsn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Driver.php.html#109"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Driver::getConnectionOptionsDsn">getConnectionOptionsDsn</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Statement.php.html#15"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Statement::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SQLSrv/Statement.php.html#20"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Statement::bindValue">bindValue</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Statement.php.html#37"><abbr title="Doctrine\DBAL\Driver\PDO\Statement::bindParamWithDriverOptions">bindParamWithDriverOptions</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Connection.php.html#102"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::beginTransaction">beginTransaction</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Connection.php.html#111"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::commit">commit</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Result.php.html#60"><abbr title="Doctrine\DBAL\Driver\PDO\Result::rowCount">rowCount</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Result.php.html#105"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetch">fetch</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Statement.php.html#21"><abbr title="Doctrine\DBAL\Driver\PDO\Statement::bindValue">bindValue</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Statement.php.html#52"><abbr title="Doctrine\DBAL\Driver\PDO\Statement::execute">execute</abbr></a></td><td class="text-right">50%</td></tr>
+       <tr><td><a href="Connection.php.html#24"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::exec">exec</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Connection.php.html#42"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::prepare">prepare</abbr></a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="SQLite/Driver.php.html#54"><abbr title="Doctrine\DBAL\Driver\PDO\SQLite\Driver::constructPdoDsn">constructPdoDsn</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="PDOConnect.php.html#15"><abbr title="Doctrine\DBAL\Driver\PDO\PDOConnect::doConnect">doConnect</abbr></a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="SQLite/Driver.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\SQLite\Driver::connect">connect</abbr></a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Statement.php.html#68"><abbr title="Doctrine\DBAL\Driver\PDO\Statement::convertParamType">convertParamType</abbr></a></td><td class="text-right">88%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="PgSQL/Driver.php.html#79"><abbr title="Doctrine\DBAL\Driver\PDO\PgSQL\Driver::constructPdoDsn">constructPdoDsn</abbr></a></td><td class="text-right">182</td></tr>
+       <tr><td><a href="PgSQL/Driver.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\PgSQL\Driver::connect">connect</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="SQLSrv/Driver.php.html#28"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Driver::connect">connect</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Connection.php.html#71"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::lastInsertId">lastInsertId</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="MySQL/Driver.php.html#63"><abbr title="Doctrine\DBAL\Driver\PDO\MySQL\Driver::constructPdoDsn">constructPdoDsn</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="SQLSrv/Driver.php.html#79"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Driver::constructDsn">constructDsn</abbr></a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="MySQL/Driver.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\MySQL\Driver::connect">connect</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="OCI/Driver.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\OCI\Driver::connect">connect</abbr></a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="SQLSrv/Statement.php.html#20"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Statement::bindValue">bindValue</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Result.php.html#78"><abbr title="Doctrine\DBAL\Driver\PDO\Result::getColumnName">getColumnName</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Statement.php.html#68"><abbr title="Doctrine\DBAL\Driver\PDO\Statement::convertParamType">convertParamType</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Connection.php.html#54"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::query">query</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Connection.php.html#120"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::rollBack">rollBack</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Exception.php.html#13"><abbr title="Doctrine\DBAL\Driver\PDO\Exception::new">new</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="OCI/Driver.php.html#63"><abbr title="Doctrine\DBAL\Driver\PDO\OCI\Driver::constructPdoDsn">constructPdoDsn</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Result.php.html#69"><abbr title="Doctrine\DBAL\Driver\PDO\Result::columnCount">columnCount</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Result.php.html#121"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetchAll">fetchAll</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SQLSrv/Driver.php.html#109"><abbr title="Doctrine\DBAL\Driver\PDO\SQLSrv\Driver::getConnectionOptionsDsn">getConnectionOptionsDsn</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Statement.php.html#37"><abbr title="Doctrine\DBAL\Driver\PDO\Statement::bindParamWithDriverOptions">bindParamWithDriverOptions</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="SQLite/Driver.php.html#25"><abbr title="Doctrine\DBAL\Driver\PDO\SQLite\Driver::connect">connect</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="SQLite/Driver.php.html#54"><abbr title="Doctrine\DBAL\Driver\PDO\SQLite\Driver::constructPdoDsn">constructPdoDsn</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Connection.php.html#102"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::beginTransaction">beginTransaction</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Connection.php.html#111"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::commit">commit</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Result.php.html#60"><abbr title="Doctrine\DBAL\Driver\PDO\Result::rowCount">rowCount</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Result.php.html#105"><abbr title="Doctrine\DBAL\Driver\PDO\Result::fetch">fetch</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Statement.php.html#21"><abbr title="Doctrine\DBAL\Driver\PDO\Statement::bindValue">bindValue</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Statement.php.html#52"><abbr title="Doctrine\DBAL\Driver\PDO\Statement::execute">execute</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Connection.php.html#24"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::exec">exec</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="Connection.php.html#42"><abbr title="Doctrine\DBAL\Driver\PDO\Connection::prepare">prepare</abbr></a></td><td class="text-right">2</td></tr>
+       <tr><td><a href="PDOConnect.php.html#15"><abbr title="Doctrine\DBAL\Driver\PDO\PDOConnect::doConnect">doConnect</abbr></a></td><td class="text-right">2</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 11.0.9</a> using <a href="https://www.php.net/" target="_top">PHP 8.2.27</a> and <a href="https://phpunit.de/">PHPUnit 11.5.10</a> at Mon Mar 3 19:12:40 UTC 2025.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../../../../../_js/jquery.min.js?v=11.0.9" type="text/javascript"></script>
+  <script src="../../../../../../_js/d3.min.js?v=11.0.9" type="text/javascript"></script>
+  <script src="../../../../../../_js/nv.d3.min.js?v=11.0.9" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([8,0,1,1,0,0,1,1,1,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([31,0,0,0,4,0,2,4,1,1,0,5], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[22.5,24,"<a href=\"Connection.php.html#16\">Doctrine\\DBAL\\Driver\\PDO\\Connection<\/a>"],[0,2,"<a href=\"Exception.php.html#11\">Doctrine\\DBAL\\Driver\\PDO\\Exception<\/a>"],[0,1,"<a href=\"Exception\/InvalidConfiguration.php.html#12\">Doctrine\\DBAL\\Driver\\PDO\\Exception\\InvalidConfiguration<\/a>"],[0,13,"<a href=\"MySQL\/Driver.php.html#18\">Doctrine\\DBAL\\Driver\\PDO\\MySQL\\Driver<\/a>"],[0,8,"<a href=\"OCI\/Driver.php.html#18\">Doctrine\\DBAL\\Driver\\PDO\\OCI\\Driver<\/a>"],[0,22,"<a href=\"PgSQL\/Driver.php.html#18\">Doctrine\\DBAL\\Driver\\PDO\\PgSQL\\Driver<\/a>"],[17.857142857142858,20,"<a href=\"Result.php.html#14\">Doctrine\\DBAL\\Driver\\PDO\\Result<\/a>"],[0,3,"<a href=\"SQLSrv\/Connection.php.html#11\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Connection<\/a>"],[0,18,"<a href=\"SQLSrv\/Driver.php.html#21\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Driver<\/a>"],[0,6,"<a href=\"SQLSrv\/Statement.php.html#12\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Statement<\/a>"],[72.22222222222221,8,"<a href=\"SQLite\/Driver.php.html#18\">Doctrine\\DBAL\\Driver\\PDO\\SQLite\\Driver<\/a>"],[59.09090909090909,13,"<a href=\"Statement.php.html#14\">Doctrine\\DBAL\\Driver\\PDO\\Statement<\/a>"],[66.66666666666666,2,"<a href=\"PDOConnect.php.html#12\">Doctrine\\DBAL\\Driver\\PDO\\PDOConnect<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"Connection.php.html#19\">Doctrine\\DBAL\\Driver\\PDO\\Connection::__construct<\/a>"],[60,2,"<a href=\"Connection.php.html#24\">Doctrine\\DBAL\\Driver\\PDO\\Connection::exec<\/a>"],[0,1,"<a href=\"Connection.php.html#37\">Doctrine\\DBAL\\Driver\\PDO\\Connection::getServerVersion<\/a>"],[60,2,"<a href=\"Connection.php.html#42\">Doctrine\\DBAL\\Driver\\PDO\\Connection::prepare<\/a>"],[0,2,"<a href=\"Connection.php.html#54\">Doctrine\\DBAL\\Driver\\PDO\\Connection::query<\/a>"],[0,1,"<a href=\"Connection.php.html#66\">Doctrine\\DBAL\\Driver\\PDO\\Connection::quote<\/a>"],[0,8,"<a href=\"Connection.php.html#71\">Doctrine\\DBAL\\Driver\\PDO\\Connection::lastInsertId<\/a>"],[33.33333333333333,2,"<a href=\"Connection.php.html#102\">Doctrine\\DBAL\\Driver\\PDO\\Connection::beginTransaction<\/a>"],[33.33333333333333,2,"<a href=\"Connection.php.html#111\">Doctrine\\DBAL\\Driver\\PDO\\Connection::commit<\/a>"],[0,2,"<a href=\"Connection.php.html#120\">Doctrine\\DBAL\\Driver\\PDO\\Connection::rollBack<\/a>"],[0,1,"<a href=\"Connection.php.html#129\">Doctrine\\DBAL\\Driver\\PDO\\Connection::getNativeConnection<\/a>"],[0,2,"<a href=\"Exception.php.html#13\">Doctrine\\DBAL\\Driver\\PDO\\Exception::new<\/a>"],[0,1,"<a href=\"Exception\/InvalidConfiguration.php.html#14\">Doctrine\\DBAL\\Driver\\PDO\\Exception\\InvalidConfiguration::notAStringOrNull<\/a>"],[0,6,"<a href=\"MySQL\/Driver.php.html#25\">Doctrine\\DBAL\\Driver\\PDO\\MySQL\\Driver::connect<\/a>"],[0,7,"<a href=\"MySQL\/Driver.php.html#63\">Doctrine\\DBAL\\Driver\\PDO\\MySQL\\Driver::constructPdoDsn<\/a>"],[0,6,"<a href=\"OCI\/Driver.php.html#25\">Doctrine\\DBAL\\Driver\\PDO\\OCI\\Driver::connect<\/a>"],[0,2,"<a href=\"OCI\/Driver.php.html#63\">Doctrine\\DBAL\\Driver\\PDO\\OCI\\Driver::constructPdoDsn<\/a>"],[0,9,"<a href=\"PgSQL\/Driver.php.html#25\">Doctrine\\DBAL\\Driver\\PDO\\PgSQL\\Driver::connect<\/a>"],[0,13,"<a href=\"PgSQL\/Driver.php.html#79\">Doctrine\\DBAL\\Driver\\PDO\\PgSQL\\Driver::constructPdoDsn<\/a>"],[100,1,"<a href=\"Result.php.html#17\">Doctrine\\DBAL\\Driver\\PDO\\Result::__construct<\/a>"],[0,1,"<a href=\"Result.php.html#21\">Doctrine\\DBAL\\Driver\\PDO\\Result::fetchNumeric<\/a>"],[100,1,"<a href=\"Result.php.html#26\">Doctrine\\DBAL\\Driver\\PDO\\Result::fetchAssociative<\/a>"],[0,1,"<a href=\"Result.php.html#31\">Doctrine\\DBAL\\Driver\\PDO\\Result::fetchOne<\/a>"],[0,1,"<a href=\"Result.php.html#39\">Doctrine\\DBAL\\Driver\\PDO\\Result::fetchAllNumeric<\/a>"],[0,1,"<a href=\"Result.php.html#47\">Doctrine\\DBAL\\Driver\\PDO\\Result::fetchAllAssociative<\/a>"],[0,1,"<a href=\"Result.php.html#55\">Doctrine\\DBAL\\Driver\\PDO\\Result::fetchFirstColumn<\/a>"],[33.33333333333333,2,"<a href=\"Result.php.html#60\">Doctrine\\DBAL\\Driver\\PDO\\Result::rowCount<\/a>"],[0,2,"<a href=\"Result.php.html#69\">Doctrine\\DBAL\\Driver\\PDO\\Result::columnCount<\/a>"],[0,4,"<a href=\"Result.php.html#78\">Doctrine\\DBAL\\Driver\\PDO\\Result::getColumnName<\/a>"],[100,1,"<a href=\"Result.php.html#95\">Doctrine\\DBAL\\Driver\\PDO\\Result::free<\/a>"],[33.33333333333333,2,"<a href=\"Result.php.html#105\">Doctrine\\DBAL\\Driver\\PDO\\Result::fetch<\/a>"],[0,2,"<a href=\"Result.php.html#121\">Doctrine\\DBAL\\Driver\\PDO\\Result::fetchAll<\/a>"],[0,1,"<a href=\"SQLSrv\/Connection.php.html#13\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Connection::__construct<\/a>"],[0,1,"<a href=\"SQLSrv\/Connection.php.html#18\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Connection::prepare<\/a>"],[0,1,"<a href=\"SQLSrv\/Connection.php.html#25\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Connection::getNativeConnection<\/a>"],[0,9,"<a href=\"SQLSrv\/Driver.php.html#28\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Driver::connect<\/a>"],[0,7,"<a href=\"SQLSrv\/Driver.php.html#79\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Driver::constructDsn<\/a>"],[0,2,"<a href=\"SQLSrv\/Driver.php.html#109\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Driver::getConnectionOptionsDsn<\/a>"],[0,1,"<a href=\"SQLSrv\/Statement.php.html#15\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Statement::__construct<\/a>"],[0,5,"<a href=\"SQLSrv\/Statement.php.html#20\">Doctrine\\DBAL\\Driver\\PDO\\SQLSrv\\Statement::bindValue<\/a>"],[75,5,"<a href=\"SQLite\/Driver.php.html#25\">Doctrine\\DBAL\\Driver\\PDO\\SQLite\\Driver::connect<\/a>"],[66.66666666666666,3,"<a href=\"SQLite\/Driver.php.html#54\">Doctrine\\DBAL\\Driver\\PDO\\SQLite\\Driver::constructPdoDsn<\/a>"],[100,1,"<a href=\"Statement.php.html#17\">Doctrine\\DBAL\\Driver\\PDO\\Statement::__construct<\/a>"],[50,2,"<a href=\"Statement.php.html#21\">Doctrine\\DBAL\\Driver\\PDO\\Statement::bindValue<\/a>"],[0,2,"<a href=\"Statement.php.html#37\">Doctrine\\DBAL\\Driver\\PDO\\Statement::bindParamWithDriverOptions<\/a>"],[50,2,"<a href=\"Statement.php.html#52\">Doctrine\\DBAL\\Driver\\PDO\\Statement::execute<\/a>"],[88.88888888888889,6,"<a href=\"Statement.php.html#68\">Doctrine\\DBAL\\Driver\\PDO\\Statement::convertParamType<\/a>"],[66.66666666666666,2,"<a href=\"PDOConnect.php.html#15\">Doctrine\\DBAL\\Driver\\PDO\\PDOConnect::doConnect<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

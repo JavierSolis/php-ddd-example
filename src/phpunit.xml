@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="./vendor/phpunit/phpunit/phpunit.xsd"
+         bootstrap="./vendor/autoload.php"
+         colors="true"
+         processIsolation="false"
+         executionOrder="depends,defects">
+    <php>
+        <env name="XDEBUG_MODE" value="coverage"/>
+        
+        <env name="APP_ENV" value="test"/>
+        <env name="APP_DEBUG" value="false"/>
+        <env name="APP_SECRET" value="secret"/>
+        <env name="KERNEL_CLASS" value="App\KernelTest"/>
+    </php>
+    <testsuites>
+        <testsuite name="Application Test Suite">
+            <directory>./tests/Application</directory>
+        </testsuite>
+        <testsuite name="Domain Test Suite">
+            <directory>./tests/Domain</directory>
+        </testsuite>
+        <testsuite name="Integration Test Suite">
+            <directory>./tests/Integration</directory>
+        </testsuite>
+        <testsuite name="Infrastructure Test Suite">
+            <directory>./tests/Infrastructure</directory>
+        </testsuite>
+    </testsuites>
+    <source>
+        <include>
+            <directory suffix=".php">./</directory>
+        </include>
+    </source>
+</phpunit>

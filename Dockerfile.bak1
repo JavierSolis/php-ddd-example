@@ -1,0 +1,28 @@
+FROM php:8.2-fpm
+
+# Instalar Composer (método multi-stage build)
+COPY --from=composer:latest -- /usr/bin/composer /usr/bin/composer
+
+# Copiar archivos de Composer (si es necesario)
+COPY composer.json composer.lock ./
+
+# Instalar dependencias de Composer (si es necesario)
+RUN composer install --no-interaction --no-dev --optimize-autoloader
+
+# Copiar el resto del código de la aplicación
+COPY . .
+
+# Generar la clave de la aplicación (después de que .env esté en su lugar)
+RUN if [ ! -f /var/www/html/.env ]; then cp /var/www/html/.env.example /var/www/html/.env; fi
+RUN php artisan key:generate --force
+
+# Instalar dependencias de npm y construir assets (si es necesario)
+RUN npm install && npm run build
+
+# Establecer permisos correctos (después de la compilación de assets)
+RUN chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache
+RUN chmod -R 755 /var/www/html/storage /var/www/html/bootstrap/cache
+
+EXPOSE 80
+
+CMD ["php-fpm"]
