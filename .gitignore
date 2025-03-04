@@ -4,3 +4,6 @@ app/var/cache/
 app/var/cache/test/
 app/var/log/
 app/coverage/
+
+*.log
+.DS_Store

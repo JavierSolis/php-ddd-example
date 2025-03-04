@@ -21,7 +21,9 @@ reset-all:
 	docker compose down -v --rmi all
 	docker compose up -d
 	docker compose exec php composer install
-	docker compose exec php create_schema.php
+	# Espera a que MySQL esté listo antes de continuar
+	docker compose exec php sh -c 'until nc -z -v -w30 db 3306; do echo "Waiting for database..."; sleep 5; done'
+	docker compose exec php php setup/create_schema.php
 	docker compose exec php ./vendor/bin/phpunit
 
 reset-vol:

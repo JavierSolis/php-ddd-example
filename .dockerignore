@@ -1,5 +1,13 @@
-.git
+.git/
 .gitignore
 node_modules
 app/vendor
 *.log
+.dockerignore
+README.md
+LICENSE
+*.md
+Makefile
+docker-compose.yml
+docker-compose.*.yml
+tests/

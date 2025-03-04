@@ -36,6 +36,10 @@ API REST para registro de usuarios, implementada con <b>PHP, Slim Framework y Do
 ### 🔥 Ejecución
 
 1. Instalar todas las dependencias, ejecutar el contenedo y ejecutar los test para verificar: `make build`
+   
+   Salida de terminal:
+   ![alt text](image.png)
+
 2. Entonces si todo fue bien, tiene disponible (Interactuar con el shell, 1 APIs y el PhpAdmin):
    
    2.1.  Shell de Php: `make exec`
@@ -54,8 +58,17 @@ API REST para registro de usuarios, implementada con <b>PHP, Slim Framework y Do
     }'
    
    ```
+
+   Probado en Postman
    
+   ![alt text](image-1.png)
+
    2.3. [PhpAdmin](http://localhost:8181) :  http://localhost:8181 `User:admin / Pass:admin`
+
+   PhpAdmin:
+   ![alt text](image-2.png)
+   Tabla:
+   ![alt text](image-3.png)
 
 
 
@@ -105,6 +118,50 @@ config
 ├── bootstrap.php
 ├── doctrine.php
 └── events.php
+```
+
+### 👓 Entidad+ValueObjects
+
+```mermaid
+classDiagram
+    class User {
+        - id: UserId
+        - name: Name
+        - email: Email
+        - password: Password
+        - createdAt: DateTime
+        + __construct(id: UserId, name: Name, email: Email, password: Password)
+        + getId(): UserId
+        + getName(): Name
+        + getEmail(): Email
+        + getPassword(): Password
+        + getCreatedAt(): DateTime
+    }
+    class UserId {
+        - id: string
+        + __construct(id: string)
+        + getId(): string
+    }
+    class Name {
+        - name: string
+        + __construct(name: string)
+        + getName(): string
+    }
+    class Email {
+        - email: string
+        + __construct(email: string)
+        + getEmail(): string
+    }
+    class Password {
+        - passwordHash: string
+        + __construct(password: string)
+        + getPasswordHash(): string
+    }
+    User "1" -- "1" UserId : tiene
+    User "1" -- "1" Name : tiene
+    User "1" -- "1" Email : tiene
+    User "1" -- "1" Password : tiene
+    
 ```
 
 ## 🙋🏻 Características
