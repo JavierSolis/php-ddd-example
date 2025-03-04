@@ -5,6 +5,8 @@
 ./vendor/bin/phpunit tests/Domain/Event/UserRegisteredTest.php
 ./vendor/bin/phpunit tests/Integration/RegisterUserIntegrationTest.php
 
+./vendor/bin/phpunit tests/Api/RegisterUserTest.php
+
 ./vendor/bin/phpunit tests/Infrastructure/Presentation/Controller/RegisterUserControllerTest.php
 
 # Cobertura

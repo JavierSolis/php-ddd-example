@@ -11,6 +11,7 @@ use App\Domain\Repository\UserRepositoryInterface;
 use App\Infrastructure\Persistence\Entity\UserPersistence;
 use Doctrine\ORM\EntityManagerInterface;
 use App\Infrastructure\Exceptions\UserNotFoundException;
+use App\Infrastructure\Exceptions\UserAlreadyExistsException;
 
 class DoctrineUserRepository implements UserRepositoryInterface
 {
@@ -23,6 +24,10 @@ class DoctrineUserRepository implements UserRepositoryInterface
 
     public function save(User $user): void
     {
+        if ($this->findByEmail($user->getEmail())) {
+            throw new UserAlreadyExistsException('El email ya existe.');
+        }
+
         $this->entityManager->beginTransaction();
         try {
             $userPersistence = new UserPersistence();

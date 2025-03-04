@@ -1,1 +1,0 @@
-{"version":1,"defects":{"App\\Tests\\Domain\\Event\\UserRegisteredTest::testGetUser":8,"App\\Tests\\Integration\\RegisterUserIntegrationTest::testExecute":8,"App\\Tests\\Application\\UseCase\\RegisterUserTest::testExecute":8},"times":{"App\\Tests\\Domain\\Event\\UserRegisteredTest::testGetUser":0.014,"App\\Tests\\Application\\UseCase\\RegisterUserTest::testExecute":0.017}}

@@ -24,8 +24,9 @@ $params = [
     'host'     => 'db',
     'driver'   => 'pdo_mysql',
 ];
-echo "TOMARA TRUE O FALSE:::".($_ENV['APP_ENV'] === 'test')."<:::";
-if ($_ENV['APP_ENV'] === 'test') {
+$appEnv = $_ENV['APP_ENV'] ?? 'dev'; // Use a default value if not set.
+
+if ($appEnv === 'test') {
     $params = [
         'driver' => 'pdo_sqlite',
     ];
@@ -34,4 +35,4 @@ if ($_ENV['APP_ENV'] === 'test') {
 $connection = DriverManager::getConnection($params, $config);
 
 
-return new EntityManager($connection, $config);
+return new EntityManager($connection, $config); 
