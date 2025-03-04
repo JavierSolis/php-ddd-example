@@ -1,0 +1,4 @@
+src/vendor
+src/var/cache
+src/var/cache/test
+src/var/log
