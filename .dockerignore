@@ -11,3 +11,4 @@ Makefile
 docker-compose.yml
 docker-compose.*.yml
 tests/
+.readme_assets

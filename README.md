@@ -175,17 +175,17 @@ classDiagram
 
 ## 📺 Capturas
 
-### - Salida terminal de `make buid``
-  ![alt text](image.png)
+### - Salida terminal de `make buid`
+  ![Salida terminal de make buid](.readme_assets/image.png)
 
 ### - Endpoint probado en Postman
-   ![alt text](image-1.png)
+   ![Endpoint probado en Postman](.readme_assets/image-1.png)
 
 ### - PhpAdmin:
    Web:
-   ![alt text](image-2.png)
+   ![PhpAdmin web](.readme_assets/image-2.png)
    Tabla:
-   ![alt text](image-3.png)
+   ![PhpAdmin tabla users](.readme_assets/image-3.png)
 
 
 
