@@ -37,9 +37,6 @@ API REST para registro de usuarios, implementada con <b>PHP, Slim Framework y Do
 
 1. Instalar todas las dependencias, ejecutar el contenedo y ejecutar los test para verificar: `make build`
    
-   Salida de terminal:
-   ![alt text](image.png)
-
 2. Entonces si todo fue bien, tiene disponible (Interactuar con el shell, 1 APIs y el PhpAdmin):
    
    2.1.  Shell de Php: `make exec`
@@ -59,16 +56,7 @@ API REST para registro de usuarios, implementada con <b>PHP, Slim Framework y Do
    
    ```
 
-   Probado en Postman
-   
-   ![alt text](image-1.png)
-
    2.3. [PhpAdmin](http://localhost:8181) :  http://localhost:8181 `User:admin / Pass:admin`
-
-   PhpAdmin:
-   ![alt text](image-2.png)
-   Tabla:
-   ![alt text](image-3.png)
 
 
 
@@ -183,6 +171,21 @@ classDiagram
 * PHPUnit
 * Docker
 * Composer
+
+
+## 📺 Capturas
+
+### - Salida terminal de `make buid``
+  ![alt text](image.png)
+
+### - Endpoint probado en Postman
+   ![alt text](image-1.png)
+
+### - PhpAdmin:
+   Web:
+   ![alt text](image-2.png)
+   Tabla:
+   ![alt text](image-3.png)
 
 
 
