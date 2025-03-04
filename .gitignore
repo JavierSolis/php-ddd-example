@@ -1,4 +1,5 @@
-src/vendor
-src/var/cache
-src/var/cache/test
-src/var/log
+src/vendor/
+src/var/
+src/var/cache/
+src/var/cache/test/
+src/var/log/
