@@ -43,10 +43,8 @@ RUN mkdir -p /var/www/html
 
 WORKDIR /var/www/html
 
-COPY ./src .
+COPY ./app .
 
 RUN echo "memory_limit=1G" > /usr/local/etc/php/conf.d/memory-limit.ini
 
-#RUN chown -R www-data:www-data /var/www/html && chmod -R 755 /var/www/html
-#RUN chmod -R 777 /var/www/html
 RUN chown -R laravel:laravel /var/www/html

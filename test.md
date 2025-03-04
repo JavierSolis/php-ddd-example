@@ -14,6 +14,9 @@
 
 ./vendor/bin/phpunit tests/Domain/Entity/UserTest.php
 
+# Para probar con la base de datos mysql
+./vendor/bin/phpunit --no-configuration tests/Integration/RegisterUserIntegrationTest.php
+
 # Cobertura
 ./vendor/bin/phpunit --coverage-html coverage
 

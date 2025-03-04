@@ -1,5 +1,6 @@
-src/vendor/
-src/var/
-src/var/cache/
-src/var/cache/test/
-src/var/log/
+app/vendor/
+app/var/
+app/var/cache/
+app/var/cache/test/
+app/var/log/
+app/coverage/

@@ -1,3 +1,0 @@
-controllers:
-    resource: ../Infrastructure/Presentation/Controller/
-    type: attribute

@@ -11,7 +11,7 @@ services:
       - 80:80
       - 443:443
     volumes:
-      - ./src:/var/www/html
+      - ./app:/var/www/html
   db:
     image: mysql:8.0.27
     platform: linux/amd64
@@ -30,7 +30,7 @@ services:
       context: .
       dockerfile: ./docker/php.Dockerfile
     volumes:
-      - ./src:/var/www/html
+      - ./app:/var/www/html
     environment:
       XDEBUG_MODE: coverage
       PHP_INI_MEMORY_LIMIT: 1G
