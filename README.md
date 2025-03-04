@@ -17,9 +17,9 @@
 API REST para registro de usuarios, implementada con <b>PHP, Slim Framework y Doctrine ORM, siguiendo la metodología DDD</b> .
 
   <br>
-  <a href="https://github.com/CodelyTV/php-ddd-example/stargazers">Las estrellas son bienvenidas ⭐️</a>
+  <a href="https://github.com/JavierSolis/php-ddd-example/stargazers">Las estrellas son bienvenidas ⭐️</a>
 
-  <a href="https://github.com/CodelyTV/php-ddd-example/issues">Solicitar un feature 🚀</a>
+  <a href="https://github.com/JavierSolis/php-ddd-example/issues">Solicitar un feature 🚀</a>
   
 </div>
 
@@ -29,13 +29,22 @@ API REST para registro de usuarios, implementada con <b>PHP, Slim Framework y Do
 ### 🐳 Herramientas necesarias
 
 1. [Instalar Docker](https://www.docker.com/get-started)
-2. Clonar el proyecto: `git clone https:// php-ddd-jsolis`
-3. Move to the project folder: `cd php-ddd-jsolis`
+2. Clonar el proyecto: 
+   ```shell
+   git clone git@github.com:JavierSolis/php-ddd-example.git php-ddd-jsolis
+   ```
+3. Moverse a la carpeta del proyecto: 
+   ```shell
+   cd php-ddd-jsolis
+   ```
 
 
 ### 🔥 Ejecución
 
-1. Instalar todas las dependencias, ejecutar el contenedo y ejecutar los test para verificar: `make build`
+1. Instalar todas las dependencias, ejecutar el contenedo y ejecutar los test para verificar: 
+     ```shell
+      make build
+    ```
    
 2. Entonces si todo fue bien, tiene disponible (Interactuar con el shell, 1 APIs y el PhpAdmin):
    
